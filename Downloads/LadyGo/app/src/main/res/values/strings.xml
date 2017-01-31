@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lady Go</string>
+    <string name="app_eMail">Correo Electrónico</string>
+    <string name="app_eMailExample">alguien@dominio.com</string>
+    <string name="app_password">Contraseña</string>
+    <string name="app_passwordMask">********</string>
+    <string name="app_startSesion">Iniciar Sesión</string>
+    <string name="app_ingresar">Ingresar</string>
+    <string name="app_newUser">¿Eres nuevo? Regístrate aquí.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_principal_usuario">Principal USuario</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

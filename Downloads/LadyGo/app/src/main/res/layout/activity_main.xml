@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.dostics01.ladygo.Activities.MainActivity"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/banner"/>
+
+        <TextView
+            android:id="@+id/lblTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_startSesion"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblEMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_eMail"
+                android:textSize="25dp"
+                android:textColor="@color/ColorEtiquetas"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_email"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/txtEMail"
+                    android:paddingLeft="5dp"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/app_eMailExample"
+                    android:layout_gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_password"
+                android:textSize="25dp"
+                android:textColor="@color/ColorEtiquetas"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_password"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:paddingLeft="5dp"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/app_passwordMask"
+                    android:layout_gravity="center"
+                    android:inputType="textWebPassword"
+                    android:ems="10"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:text="@string/app_newUser"
+            android:textSize="12dp"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:text="@string/app_ingresar"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
